@@ -2,7 +2,7 @@
 khd kwm on
 
 # set color of default mode
-khd mode default color 0xFFBDD322
+khd mode default color 0xFF99C794
 
 # Enable the prefix mode
 khd mode prefix prefix on

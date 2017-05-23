@@ -49,16 +49,13 @@ kwmc bindsym hyper-h window -f west
 */
 
 // Set default values for screen padding
-kwmc config padding 30 10 10 10
+kwmc config padding 35 10 10 10
 
 // Set default values for container gaps
 kwmc config gap 10 10
 
 // Default tiling mode for Kwm (bsp | monocle | float)
 kwmc config tiling bsp
-
-// Let Kwm listen for hotkeys
-/* kwmc config hotkeys on */
 
 // Automatically float windows that fail to resize
 kwmc config float-non-resizable on
@@ -115,26 +112,15 @@ kwmc config spawn left
    AXWindowRole and AXStandardWindowSubRole */
 kwmc rule owner="iTerm2" properties={role="AXDialog"}
 
-/* The following commands create rules that
-   blacklists an application from Kwms tiling
-
-   kwmc rule owner="Steam" properties={float="true"}
-   kwmc rule owner="Photoshop" properties={float="true"} */
-
-/* The following command creates a rule that
-   captures an application to the given screen,
-   if the screen exists.
-
-   kwmc rule owner="iTunes" properties={display="1"} */
-
 kwmc rule owner="WebStorm" properties={float="true"} except="- \["
 kwmc rule owner="PyCharm" properties={float="true"} except="- \["
 kwmc rule owner="IntelliJ IDEA" properties={float="true"} except="- \["
+kwmc rule owner="Android Studio" properties={float="true"} except="- \["
 
 # Enable border for focused window
 kwmc config border focused on
 kwmc config border focused size 2
-kwmc config border focused color 0xFFBDD322
+kwmc config border focused color 0xFF99C794
 kwmc config border focused radius 6
 
 # Enable border for marked window
